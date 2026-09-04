@@ -1,0 +1,22 @@
+{
+  "conversation_id": "CONV-004",
+  "account_id": "ACC-1004",
+  "customer_name": "David Kim",
+  "title": "eSIM activation showing 'No Service' after PAC transfer submission",
+  "summary": "Customer submitted PAC code 12 hours ago; new eSIM downloaded but shows No Service. Status is clearing house transit.",
+  "intent": "Mobile porting status inquiry",
+  "expected_mode": "RESOLUTION_DRAFT",
+  "target_kb": "KB-MOB-004",
+  "messages": [
+    {
+      "sender": "customer",
+      "timestamp": "2026-09-04T21:00:20+05:30",
+      "content": "Hi, I installed my new 5G Unlimited eSIM QR profile this morning, but my phone still says 'No Service' at the top bar. My old SIM from O2 stopped working an hour ago."
+    },
+    {
+      "sender": "customer",
+      "timestamp": "2026-09-04T21:01:45+05:30",
+      "content": "I already submitted my PAC code O2-789123-K when signing up yesterday. Has my phone number been lost in transfer?"
+    }
+  ]
+}

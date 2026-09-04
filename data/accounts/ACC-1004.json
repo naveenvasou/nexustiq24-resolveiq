@@ -1,0 +1,31 @@
+{
+  "account_id": "ACC-1004",
+  "customer_name": "David Kim",
+  "email": "dkim.creative@example.com",
+  "phone": "+1-555-012-3390",
+  "service_address": "404 Mission Bay Blvd, Bayview",
+  "service_plan": "5G Unlimited Mobile",
+  "plan_type": "mobile",
+  "monthly_charge": 45.0,
+  "current_balance": 0.0,
+  "payment_status": "CURRENT",
+  "contract_state": "ACTIVE",
+  "contract_start_date": "2026-09-04",
+  "contract_end_date": "2028-09-04",
+  "contract_months_remaining": 24,
+  "equipment": {
+    "handset": "Apple iPhone 15 Pro",
+    "sim_type": "eSIM",
+    "eid": "89049032005008882600012345678901",
+    "sim_iccid": "8901410444332211001"
+  },
+  "porting_telemetry": {
+    "pac_code": "O2-789123-K",
+    "previous_provider": "O2 Cellular",
+    "transferred_number": "+1-555-012-3390",
+    "porting_status": "IN_CLEARING_HOUSE_TRANSIT",
+    "hours_since_submission": 12,
+    "estimated_completion_hours": 3,
+    "esim_profile_downloaded": true
+  }
+}

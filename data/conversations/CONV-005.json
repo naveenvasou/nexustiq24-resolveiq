@@ -1,0 +1,17 @@
+{
+  "conversation_id": "CONV-005",
+  "account_id": "ACC-1005",
+  "customer_name": "Elena Rostova",
+  "title": "Contract ending soon - Inquiry about speed upgrade vs cancellation penalty",
+  "summary": "Customer contract ends in 10 days; wondering if cancelling has fees or what options exist for upgrading from slow 100Mbps plan.",
+  "intent": "Contract renewal and speed tier upgrade inquiry",
+  "expected_mode": "RESOLUTION_DRAFT",
+  "target_kb": "KB-ACC-005",
+  "messages": [
+    {
+      "sender": "customer",
+      "timestamp": "2026-09-04T21:40:10+05:30",
+      "content": "Hello. Our contract is ending in about a week or two, and our current 100Mbps plan is really struggling now that the whole family is streaming and gaming. What would it cost if we decide to cancel early? Or is there a reasonable deal to upgrade to faster speeds without paying a fortune?"
+    }
+  ]
+}

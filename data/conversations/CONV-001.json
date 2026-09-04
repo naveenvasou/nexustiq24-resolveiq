@@ -1,0 +1,27 @@
+{
+  "conversation_id": "CONV-001",
+  "account_id": "ACC-1001",
+  "customer_name": "Sarah Jenkins",
+  "title": "No internet connection after area outage marked resolved",
+  "summary": "Customer received SMS stating neighborhood outage was restored, but home devices cannot access internet. Has already toggled phone Wi-Fi.",
+  "intent": "Post-outage reconnection assistance",
+  "expected_mode": "RESOLUTION_DRAFT",
+  "target_kb": "KB-NET-001",
+  "messages": [
+    {
+      "sender": "customer",
+      "timestamp": "2026-09-04T18:40:12+05:30",
+      "content": "Hi there. I got an automated text about 2 hours ago saying the broadband outage in Springfield was resolved, but our internet is still completely offline."
+    },
+    {
+      "sender": "agent_initial",
+      "timestamp": "2026-09-04T18:41:05+05:30",
+      "content": "Hello Sarah, thanks for reaching out to NexusTel Support. I can see your Fiber 500 connection. Have you tried checking your devices?"
+    },
+    {
+      "sender": "customer",
+      "timestamp": "2026-09-04T18:42:30+05:30",
+      "content": "Yes, I've already turned Wi-Fi off and on across both my phone and laptop, but neither can load any webpages. I have critical work calls starting in 30 minutes, so I really need this fixed right away."
+    }
+  ]
+}

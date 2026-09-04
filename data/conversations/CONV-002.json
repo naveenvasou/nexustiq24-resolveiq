@@ -1,0 +1,22 @@
+{
+  "conversation_id": "CONV-002",
+  "account_id": "ACC-1002",
+  "customer_name": "Marcus Vance",
+  "title": "Billing dispute over unexpected $65 roaming surcharge",
+  "summary": "Customer questioning sudden increase from regular $77.50 to $142.50 due to Swiss international data charges.",
+  "intent": "Invoice dispute and charge explanation",
+  "expected_mode": "RESOLUTION_DRAFT",
+  "target_kb": "KB-BIL-003",
+  "messages": [
+    {
+      "sender": "customer",
+      "timestamp": "2026-09-04T19:15:00+05:30",
+      "content": "Why on earth is my bill $142.50 this month?? My regular bill has always been $77.50 for my Fiber 100 and Ultra Mobile plan! I have not changed my subscription at all."
+    },
+    {
+      "sender": "customer",
+      "timestamp": "2026-09-04T19:16:15+05:30",
+      "content": "There is an extra $65 charge on my invoice. I was in Zurich for 2 days for business and was told Europe was included. I am not paying this unexpected fee until someone explains this and fixes it."
+    }
+  ]
+}

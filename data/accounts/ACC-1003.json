@@ -1,0 +1,41 @@
+{
+  "account_id": "ACC-1003",
+  "customer_name": "Priya Patel",
+  "email": "priya.patel@example.com",
+  "phone": "+1-555-018-7744",
+  "service_address": "88 Horizon Point Apt 4B, Metro City",
+  "service_plan": "Fiber Gigabit Pro",
+  "plan_type": "broadband",
+  "monthly_charge": 85.0,
+  "current_balance": 0.0,
+  "payment_status": "CURRENT",
+  "contract_state": "ACTIVE",
+  "contract_start_date": "2025-05-15",
+  "contract_end_date": "2027-05-15",
+  "contract_months_remaining": 8,
+  "equipment": {
+    "router_model": "NexusHub WiFi-6 Pro",
+    "router_mac": "00:1A:2B:CC:DD:EE",
+    "ont_model": "Huawei EchoLife HG8010H",
+    "ont_serial": "HWTC0982317A"
+  },
+  "telemetry": {
+    "optical_rx_power_dbm": -32.8,
+    "optical_status": "CRITICAL_SIGNAL_DEGRADATION",
+    "line_link_state": "INTERMITTENT_FLAPPING",
+    "disconnect_count_6h": 47,
+    "bit_error_rate": "1.2e-3",
+    "ont_los_alarm": "ACTIVE_BLINKING_RED"
+  },
+  "network_incident": {
+    "incident_id": null,
+    "status": "NO_GENERAL_OUTAGE",
+    "note": "Area optical distribution node healthy. Issue isolated to customer physical drop or exterior fiber cable."
+  },
+  "escalation_requirement": {
+    "level1_resolvable": false,
+    "target_team": "Field Engineering Dispatch",
+    "dispatch_priority": "HIGH_P1",
+    "reason": "Physical optical signal attenuation (-32.8 dBm) exceeding -28 dBm loss threshold; unresolvable remotely."
+  }
+}

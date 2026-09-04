@@ -1,0 +1,34 @@
+{
+  "account_id": "ACC-1001",
+  "customer_name": "Sarah Jenkins",
+  "email": "s.jenkins@example.com",
+  "phone": "+1-555-019-2831",
+  "service_address": "742 Evergreen Terrace, Springfield",
+  "service_plan": "Fiber 500",
+  "plan_type": "broadband",
+  "monthly_charge": 65.0,
+  "current_balance": 0.0,
+  "payment_status": "CURRENT",
+  "contract_state": "ACTIVE",
+  "contract_start_date": "2025-11-01",
+  "contract_end_date": "2027-11-01",
+  "contract_months_remaining": 14,
+  "equipment": {
+    "router_model": "NexusHub WiFi-6",
+    "router_mac": "00:1A:2B:3C:4D:5E",
+    "ont_model": "Nokia G-010G-A",
+    "ont_serial": "ALCLB09248A1"
+  },
+  "telemetry": {
+    "optical_rx_power_dbm": -21.4,
+    "optical_status": "NORMAL_CARRIER_DETECTED",
+    "line_link_state": "DOWN_POST_OUTAGE",
+    "sync_errors_24h": 0
+  },
+  "network_incident": {
+    "incident_id": "INC-88219",
+    "description": "Upstream OLT optical line card maintenance",
+    "status": "RESOLVED_2_HOURS_AGO",
+    "area_code": "SPF-CENTRAL"
+  }
+}

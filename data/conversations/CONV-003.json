@@ -1,0 +1,22 @@
+{
+  "conversation_id": "CONV-003",
+  "account_id": "ACC-1003",
+  "customer_name": "Priya Patel",
+  "title": "Severe connection drops and red LOS alarm - Hardware fault",
+  "summary": "Customer experiencing 47 line drops in 6h; already power cycled ONT and router 3 times and replaced cables. Optical Rx is -32.8 dBm with blinking red LOS. Unresolvable at Tier 1; requires Field Engineering Dispatch.",
+  "intent": "Critical broadband line failure",
+  "expected_mode": "HANDOVER_SUMMARY",
+  "target_kb": "KB-NET-001",
+  "messages": [
+    {
+      "sender": "customer",
+      "timestamp": "2026-09-04T20:10:00+05:30",
+      "content": "Hello, my Fiber Gigabit Pro has been dropping connection every few minutes all morning. We run a consulting business from home and this is totally crippling."
+    },
+    {
+      "sender": "customer",
+      "timestamp": "2026-09-04T20:12:45+05:30",
+      "content": "Before you ask me to turn things off and on: I have already power-cycled both the router and the white fiber box three times, waited a full 2 minutes each time, swapped the yellow ethernet cable, and checked the thin fiber cable into the wall box. On the fiber box, the LOS light is blinking red and the internet light is dead. Please do not give me generic reboot instructions."
+    }
+  ]
+}

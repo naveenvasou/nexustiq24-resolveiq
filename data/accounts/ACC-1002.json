@@ -1,0 +1,33 @@
+{
+  "account_id": "ACC-1002",
+  "customer_name": "Marcus Vance",
+  "email": "m.vance@example.com",
+  "phone": "+1-555-014-9812",
+  "service_address": "1204 Pine Creek Road, Oakville",
+  "service_plan": "Fiber 100 + Ultra Mobile 50GB",
+  "plan_type": "dual-play bundle",
+  "monthly_charge": 77.5,
+  "current_balance": 142.5,
+  "payment_status": "DISPUTED_PENDING",
+  "contract_state": "MONTH_TO_MONTH",
+  "contract_start_date": "2024-06-01",
+  "contract_end_date": "2026-06-30",
+  "contract_months_remaining": 0,
+  "equipment": {
+    "router_model": "NexusHub Basic",
+    "router_mac": "00:1A:2B:99:88:77",
+    "sim_iccid": "8901410321123456789"
+  },
+  "telemetry": {
+    "optical_rx_power_dbm": -20.1,
+    "optical_status": "GOOD",
+    "line_link_state": "ONLINE"
+  },
+  "billing_breakdown": {
+    "base_plan_charge": 77.5,
+    "out_of_allowance_charges": 65.0,
+    "charge_reason": "International Data Roaming in Switzerland (Zone 3 - 2.6GB used at $25.00/100MB cap)",
+    "dispute_opened": "2026-09-04",
+    "first_time_roaming_dispute": true
+  }
+}
