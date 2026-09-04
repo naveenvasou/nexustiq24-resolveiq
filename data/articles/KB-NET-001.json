@@ -1,0 +1,41 @@
+{
+  "id": "KB-NET-001",
+  "title": "Restoring Internet Connectivity After a Network Outage",
+  "category": "Broadband & Connectivity",
+  "summary": "Step-by-step re-synchronization procedure for fiber broadband customers when connection remains offline after an upstream outage incident has been resolved.",
+  "applicable_services": [
+    "Fiber 100",
+    "Fiber 500",
+    "Fiber Gigabit Pro"
+  ],
+  "sections": [
+    {
+      "id": "KB-NET-001-S1",
+      "heading": "ONT Optical Status Verification",
+      "text": "Inspect the Optical Network Terminal (ONT / fiber wall box). Solid green 'PON' or 'Power' light indicates optical carrier signal is intact. If the 'LOS' (Loss of Signal) light is blinking red or solid red, optical synchronization is failing at the physical fiber level."
+    },
+    {
+      "id": "KB-NET-001-S2",
+      "heading": "Sequential Re-synchronization Power Cycle",
+      "text": "Do not simply reboot the Wi-Fi router. 1) Unplug power from both the ONT and the NexusHub router. 2) Wait 60 seconds for upstream session cache to expire. 3) Plug in the ONT first and wait 90 seconds until the 'PON' light becomes solid green. 4) Power on the NexusHub router and allow 2 minutes for PPPoE/DHCP lease renewal."
+    },
+    {
+      "id": "KB-NET-001-S3",
+      "heading": "Engineering Escalation Criteria",
+      "text": "If the ONT LOS light remains illuminated red or if optical receive power is below -28.0 dBm following a sequential power cycle, the issue cannot be resolved by Level 1 customer support. A Field Engineering Dispatch is mandatory to inspect the local distribution cabinet or fiber splice point."
+    }
+  ],
+  "keywords": [
+    "outage",
+    "no internet",
+    "red light",
+    "los light",
+    "pon light",
+    "fiber box",
+    "ont",
+    "router reboot",
+    "power cycle",
+    "re-sync",
+    "offline"
+  ]
+}

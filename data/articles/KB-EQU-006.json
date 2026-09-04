@@ -1,0 +1,36 @@
+{
+  "id": "KB-EQU-006",
+  "title": "Customer Premises Equipment (CPE) Replacement and Return Logistics",
+  "category": "Hardware & Equipment",
+  "summary": "Protocols for RMA replacement of defective routers/ONTs, dispatch turnaround times, and equipment return compliance.",
+  "applicable_services": [
+    "All Broadband Plans"
+  ],
+  "sections": [
+    {
+      "id": "KB-EQU-006-S1",
+      "heading": "Hardware Defect Classification",
+      "text": "RMA replacement is authorized if the NexusHub router exhibits: repetitive hardware boot loop, dead LAN ports post-surge, internal PSU failure, or persistent 5GHz Wi-Fi radio dropouts unrepaired by firmware 4.2.1 flash."
+    },
+    {
+      "id": "KB-EQU-006-S2",
+      "heading": "Courier Dispatch & Tracking",
+      "text": "Standard replacement routers are dispatched via Next-Day Priority Courier with tracked delivery. Customers receive an SMS with live 1-hour delivery tracking window. Cloud settings auto-sync upon plug-in."
+    },
+    {
+      "id": "KB-EQU-006-S3",
+      "heading": "Return Packaging and Non-Return Surcharge",
+      "text": "The replacement package contains a pre-addressed return poly-mailer and prepaid label. The defective hardware must be returned within 21 days of receiving the new unit. An unreturned equipment fee of $120.00 is assessed if not scanned by postal carrier."
+    }
+  ],
+  "keywords": [
+    "router replacement",
+    "broken router",
+    "faulty router",
+    "rma",
+    "hardware failure",
+    "new router",
+    "return equipment",
+    "nexushub"
+  ]
+}

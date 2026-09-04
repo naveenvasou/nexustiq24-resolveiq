@@ -1,0 +1,40 @@
+{
+  "id": "KB-DAT-007",
+  "title": "Data Allowances, Fair Usage Policy (FUP), and Speed Throttling",
+  "category": "Policy & Allowances",
+  "summary": "Rules governing mobile and broadband data quotas, high-usage throttling triggers, and on-demand data top-up bolt-ons.",
+  "applicable_services": [
+    "Fiber Broadband",
+    "Ultra Mobile 50GB",
+    "5G Unlimited Mobile"
+  ],
+  "sections": [
+    {
+      "id": "KB-DAT-007-S1",
+      "heading": "Fixed Broadband Unlimited Guarantee",
+      "text": "All NexusTel residential Fiber broadband plans (Fiber 100, 500, Gigabit Pro) are truly unlimited with zero monthly data caps and no artificial traffic throttling or peak-hour shaping."
+    },
+    {
+      "id": "KB-DAT-007-S2",
+      "heading": "Mobile Data Throttling & Allowances",
+      "text": "On Ultra Mobile 50GB, reaching 100% of the 50GB domestic quota reduces speeds to 128 kbps for the remainder of the billing cycle unless a data bolt-on is added. 5G Unlimited Mobile is subject to a 1000GB Fair Usage Policy threshold for residential non-commercial usage."
+    },
+    {
+      "id": "KB-DAT-007-S3",
+      "heading": "On-Demand Data Bolt-Ons",
+      "text": "Customers on capped mobile plans can instantly purchase supplemental high-speed data: 10GB Data Pass for $10.00 or 25GB Data Pass for $20.00 via the mobile app or SMS reply 'DATA10' to 60070."
+    }
+  ],
+  "keywords": [
+    "data cap",
+    "fair usage",
+    "fup",
+    "throttling",
+    "slow data",
+    "data limit",
+    "allowance",
+    "mobile data",
+    "bolt-on",
+    "extra data"
+  ]
+}

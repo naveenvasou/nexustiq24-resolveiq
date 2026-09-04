@@ -1,0 +1,39 @@
+{
+  "id": "KB-BIL-003",
+  "title": "Billing Inquiries, Out-of-Allowance Charges, and Roaming Disputes",
+  "category": "Billing & Payments",
+  "summary": "Guidelines for resolving customer invoice disputes, international roaming charges, and applying one-time courtesy bill adjustments.",
+  "applicable_services": [
+    "All Broadband and Mobile Plans"
+  ],
+  "sections": [
+    {
+      "id": "KB-BIL-003-S1",
+      "heading": "International Roaming Zones and Rates",
+      "text": "Mobile roaming is classified into three zones: Zone 1 (EU/EEA) included in domestic allowances; Zone 2 (USA, Canada, Australia) covered by $6.00/day Roaming Pass; Zone 3 (Rest of World, including Switzerland, Monaco, UAE) billed at standard out-of-allowance rate of $0.25/MB ($25.00/100MB) unless a World Travel Bolt-On is pre-purchased."
+    },
+    {
+      "id": "KB-BIL-003-S2",
+      "heading": "First-Time Roaming Dispute Courtesy Policy",
+      "text": "Support agents are authorized to offer a one-time goodwill courtesy credit of up to 50% (maximum $50.00) of first-time disputed Zone 2 or Zone 3 roaming data charges if the customer confirms they were unaware data roaming was active on their device and sets up a data roaming spending cap."
+    },
+    {
+      "id": "KB-BIL-003-S3",
+      "heading": "Mid-Contract Adjustments & Payment Arrangements",
+      "text": "Regular monthly charges are billed 30 days in advance; usage-based fees in arrears. Customers disputing an invoice balance exceeding $100.00 may defer the disputed portion for 14 business days pending review or initiate a 3-month split installment plan without suspension."
+    }
+  ],
+  "keywords": [
+    "bill",
+    "overcharge",
+    "high bill",
+    "dispute",
+    "roaming",
+    "international roaming",
+    "switzerland",
+    "credit",
+    "courtesy credit",
+    "charges",
+    "balance"
+  ]
+}

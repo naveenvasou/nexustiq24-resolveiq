@@ -1,0 +1,38 @@
+{
+  "id": "KB-RET-008",
+  "title": "Service Cancellation, Statutory Cooling-Off, and Early Termination Fees",
+  "category": "Retention & Legal",
+  "summary": "Policy and fee calculations for customer contract cancellations, cooling-off rights, and notice period obligations.",
+  "applicable_services": [
+    "All Broadband and Mobile Plans"
+  ],
+  "sections": [
+    {
+      "id": "KB-RET-008-S1",
+      "heading": "14-Day Statutory Cooling-Off Rights",
+      "text": "New subscribers possess a 14-calendar-day cooling-off window starting from contract confirmation or service activation (whichever is later). Cancellations submitted within this window incur zero Early Termination Fees; equipment must be returned intact."
+    },
+    {
+      "id": "KB-RET-008-S2",
+      "heading": "Early Termination Fee (ETF) Calculation Formula",
+      "text": "If a contract is terminated before the minimum term end date outside the cooling-off window, an ETF applies. Formula: (Monthly Contract Rate * Remaining Months) * 0.70 (30% discount applied to reflect unconsumed wholesale costs). Customers within 30 days of contract expiration pay $0.00 ETF."
+    },
+    {
+      "id": "KB-RET-008-S3",
+      "heading": "Standard 30-Day Notice Period",
+      "text": "All cancellations require 30 calendar days advance notice. Month-to-month subscribers can cancel anytime with 30 days notice with zero ETF. Leased equipment must be returned within 21 days."
+    }
+  ],
+  "keywords": [
+    "cancel",
+    "cancellation",
+    "cooling off",
+    "early termination",
+    "etf",
+    "termination fee",
+    "penalty",
+    "end contract",
+    "leave",
+    "notice period"
+  ]
+}

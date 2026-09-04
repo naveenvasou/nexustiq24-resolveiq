@@ -1,0 +1,41 @@
+{
+  "id": "KB-ACC-005",
+  "title": "Plan Upgrades, Contract Term Renewals, and Speed Tier Migration",
+  "category": "Account & Plans",
+  "summary": "Rules for upgrading broadband and mobile tiers, contract loyalty discounts, and equipment compatibility requirements.",
+  "applicable_services": [
+    "Fiber 100",
+    "Fiber 500",
+    "Fiber Gigabit Pro",
+    "Ultra Mobile 50GB",
+    "5G Unlimited Mobile"
+  ],
+  "sections": [
+    {
+      "id": "KB-ACC-005-S1",
+      "heading": "Broadband Upgrade Paths & Equipment Requirements",
+      "text": "Customers upgrading from Fiber 100 ($45.00/mo) to Fiber 500 ($65.00/mo) or Fiber Gigabit Pro ($85.00/mo) incur zero migration fees. Upgrades to Gigabit Pro require a NexusHub WiFi-6 Pro router; equipment upgrade is dispatched free of charge on a new 18-month agreement."
+    },
+    {
+      "id": "KB-ACC-005-S2",
+      "heading": "Contract Expiration Loyalty Discounts",
+      "text": "Accounts within 30 days of contract expiration, or currently on rolling month-to-month terms, qualify for loyalty tier pricing: Fiber 500 discounted to $55.00/mo (save $10/mo) or Fiber Gigabit Pro at $75.00/mo on an 18-month renewal."
+    },
+    {
+      "id": "KB-ACC-005-S3",
+      "heading": "Order Activation Lead Time",
+      "text": "Broadband speed tier upgrades are provisioned digitally at the BNG (Broadband Network Gateway) within 15 minutes if existing customer premises equipment supports the speed profile. No engineer visit is required for standard speed uplifts."
+    }
+  ],
+  "keywords": [
+    "upgrade",
+    "plan change",
+    "faster speed",
+    "contract renewal",
+    "loyalty discount",
+    "fiber 500",
+    "gigabit",
+    "tier change",
+    "pricing"
+  ]
+}

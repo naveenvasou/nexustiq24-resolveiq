@@ -1,0 +1,40 @@
+{
+  "id": "KB-NET-002",
+  "title": "Broadband Speed Degradation and Wi-Fi Troubleshooting",
+  "category": "Broadband & Performance",
+  "summary": "Diagnostic protocols for customer reports of degraded download/upload speeds, latency jitter, and internal Wi-Fi interference.",
+  "applicable_services": [
+    "Fiber 100",
+    "Fiber 500",
+    "Fiber Gigabit Pro"
+  ],
+  "sections": [
+    {
+      "id": "KB-NET-002-S1",
+      "heading": "Minimum Guaranteed Speed Thresholds",
+      "text": "NexusTel guarantees minimum wired throughput of 80% of advertised tier: Fiber 100 minimum 80 Mbps; Fiber 500 minimum 400 Mbps; Fiber Gigabit Pro minimum 800 Mbps. Testing must be conducted via Cat6 ethernet directly connected to NexusHub LAN Port 1 with background downloads halted."
+    },
+    {
+      "id": "KB-NET-002-S2",
+      "heading": "Wi-Fi Frequency & Channel Optimization",
+      "text": "The NexusHub broadcasts dual-band 2.4GHz (extended range, max 90 Mbps real-world) and 5GHz/6GHz (high-speed, short range). High-density environments experience co-channel interference. Instruct customer to enable 'Smart Wi-Fi Channel Steering' or separate SSID bands in NexusTel app."
+    },
+    {
+      "id": "KB-NET-002-S3",
+      "heading": "Hardware Limitation Diagnostics",
+      "text": "If customer operates a legacy NexusHub Basic (Wi-Fi 5 / 802.11ac) on a Fiber 500 or Gigabit tier, hardware throughput saturation will bottleneck wireless connections to ~220-300 Mbps. A router upgrade to NexusHub WiFi-6 is recommended."
+    }
+  ],
+  "keywords": [
+    "slow speeds",
+    "speed drop",
+    "lag",
+    "buffering",
+    "wifi",
+    "5ghz",
+    "ethernet",
+    "bandwidth",
+    "channel interference",
+    "guaranteed speed"
+  ]
+}

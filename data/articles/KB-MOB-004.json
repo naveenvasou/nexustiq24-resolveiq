@@ -1,0 +1,40 @@
+{
+  "id": "KB-MOB-004",
+  "title": "Mobile SIM & eSIM Provisioning, Activation, and PAC Porting",
+  "category": "Mobile Services",
+  "summary": "Procedures for activating physical SIM cards, downloading eSIM profiles, and troubleshooting PAC/STAC number porting transitions.",
+  "applicable_services": [
+    "Ultra Mobile 50GB",
+    "5G Unlimited Mobile"
+  ],
+  "sections": [
+    {
+      "id": "KB-MOB-004-S1",
+      "heading": "eSIM Profile Installation & QR Verification",
+      "text": "eSIM profiles require an active Wi-Fi connection during installation. The device must support EID registration. Customers should navigate to Settings > Cellular > Add eSIM, then scan the secure QR code delivered via the NexusTel customer portal or confirmation email."
+    },
+    {
+      "id": "KB-MOB-004-S2",
+      "heading": "PAC / STAC Number Porting Timelines",
+      "text": "When a customer submits a Porting Authorisation Code (PAC), the transition window takes between 2 to 24 business hours. During transit ('IN_CLEARING_HOUSE_TRANSIT'), the handset may intermittently show 'No Service' or display a temporary number. Advise customer not to cancel previous service until porting completes."
+    },
+    {
+      "id": "KB-MOB-004-S3",
+      "heading": "Post-Porting Network Refresh Steps",
+      "text": "Once provisioning status reflects 'COMPLETED' in billing, customer must toggle Airplane Mode for 30 seconds or restart handset to force registration with the nearest 5G tower. Ensure APN is set to 'fast.nexustel.net' with PAP authentication."
+    }
+  ],
+  "keywords": [
+    "sim",
+    "esim",
+    "pac code",
+    "porting",
+    "number transfer",
+    "no service",
+    "activation",
+    "provisioning",
+    "mobile",
+    "network",
+    "eid"
+  ]
+}
