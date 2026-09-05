@@ -143,7 +143,9 @@ class FactValidator:
                     valid_floats.add(float(breakdown["base_plan_charge"]))
                 # 50% courtesy credit amount ($32.50 for $65.00)
                 if breakdown.get("out_of_allowance_charges"):
-                    valid_floats.add(round(float(breakdown["out_of_allowance_charges"]) * 0.5, 2))
+                    courtesy = round(float(breakdown["out_of_allowance_charges"]) * 0.5, 2)
+                    valid_floats.add(courtesy)
+                    valid_floats.add(round(curr_bal - courtesy, 2))
 
             # Retention / Loyalty discounts ($55.00, $10.00 discount)
             retention = account_record.get("retention_profile", {})
