@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ResolveIQ — Customer Support Resolution Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <div class="brand-logo">
+          <span class="brand-icon">⚡</span>
+          <span class="brand-title">Resolve<span class="brand-highlight">IQ</span></span>
+        </div>
+        <span class="badge-track">Track 4: Resolution Assistant</span>
+        <span class="brand-subtitle">NexusTel Broadband & Mobile</span>
+      </div>
+
+      <div class="topbar-right">
+        <div class="status-pill" id="system-status-pill">
+          <span class="status-dot online"></span>
+          <span id="model-status-text">Gemini 2.5 Flash Lite Ready</span>
+        </div>
+        <div class="agent-chip">
+          <span class="agent-avatar">👨‍💻</span>
+          <span class="agent-name">Agent #4092 (Tier 1)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Quick Scenario Selector -->
+    <section class="scenario-bar">
+      <span class="scenario-label">Quick Scenarios:</span>
+      <div class="scenario-pills" id="scenario-pills-container">
+        <!-- Injected via JS -->
+      </div>
+    </section>
+
+    <!-- Main Workspace (3-Column Layout) -->
+    <main class="workspace-grid">
+      
+      <!-- Column 1: Customer Conversation & Account Record -->
+      <section class="panel panel-left">
+        <div class="panel-header">
+          <h2>💬 Customer Conversation</h2>
+          <span class="conv-badge" id="conv-id-badge">CONV-001</span>
+        </div>
+
+        <div class="chat-container" id="chat-messages">
+          <!-- Chat messages injected here -->
+        </div>
+
+        <div class="chat-input-area">
+          <input type="text" id="custom-query-input" placeholder="Type customer message or follow-up question..." />
+          <button id="btn-submit-message" class="btn btn-secondary">Send</button>
+        </div>
+
+        <!-- Account Record Card -->
+        <div class="panel-header section-header-account">
+          <h2>👤 Customer Account Record</h2>
+          <span class="acc-badge" id="acc-id-badge">ACC-1001</span>
+        </div>
+
+        <div class="account-card" id="account-card-body">
+          <!-- Account attributes injected here -->
+        </div>
+      </section>
+
+      <!-- Column 2: Resolution & Handover Workbench -->
+      <section class="panel panel-center">
+        <div class="panel-header">
+          <div class="header-left">
+            <h2>🎯 Resolution Engine</h2>
+            <div id="mode-badge-container">
+              <span class="mode-badge resolution" id="mode-badge">RESOLUTION DRAFT</span>
+            </div>
+          </div>
+          <div class="engine-tag" id="engine-tag">gemini-2.5-flash-lite</div>
+        </div>
+
+        <!-- Distinctive Strength: Fact Validation Audit Panel -->
+        <div class="validation-container" id="validation-container">
+          <div class="validation-banner valid" id="validation-banner">
+            <div class="val-banner-left">
+              <span class="val-icon" id="val-icon">✓</span>
+              <div class="val-banner-text">
+                <strong id="val-verdict">FACT VALIDATION: PASSED</strong>
+                <p id="val-summary">All referenced account facts verified against customer record.</p>
+              </div>
+            </div>
+            <div class="val-banner-actions">
+              <button class="btn btn-xs btn-outline-danger" id="btn-tamper-test" title="Demonstrate validation rejection by injecting false data">Test Fact Tampering</button>
+              <button class="btn btn-xs btn-outline" id="btn-revalidate" title="Re-run validation over current text">Re-validate</button>
+            </div>
+          </div>
+
+          <div class="audit-details" id="audit-details-collapse">
+            <div class="audit-table-header">
+              <span>Fact Check Audit Log</span>
+              <button class="btn-link" id="btn-toggle-audit">Hide details</button>
+            </div>
+            <div class="audit-table-wrapper">
+              <table class="audit-table">
+                <thead>
+                  <tr>
+                    <th>Attribute</th>
+                    <th>Drafted Claim</th>
+                    <th>Account Truth</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="audit-table-body">
+                  <!-- Injected via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Handover Details Box (Shown in HANDOVER_SUMMARY mode) -->
+        <div class="handover-box" id="handover-box" style="display: none;">
+          <div class="handover-box-header">
+            <span class="handover-icon">🚨</span>
+            <div>
+              <h3>Engineering Escalation Handover Briefing</h3>
+              <p>Physical/Hardware fault cannot be resolved at Level 1. Customer will not repeat troubleshooting.</p>
+            </div>
+          </div>
+          <div class="handover-meta-grid" id="handover-meta-grid">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+
+        <!-- Editable Draft Text Area -->
+        <div class="draft-workspace">
+          <div class="draft-toolbar">
+            <label for="draft-textarea" id="draft-label">Drafted Resolution for Agent Approval:</label>
+            <div class="draft-tools">
+              <button class="btn-tool" id="btn-copy-draft" title="Copy to clipboard">📋 Copy</button>
+              <button class="btn-tool" id="btn-regenerate" title="Regenerate draft">🔄 Regenerate</button>
+            </div>
+          </div>
+          <textarea id="draft-textarea" rows="12" spellcheck="false" placeholder="Draft resolution will appear here..."></textarea>
+        </div>
+
+        <!-- Recommended Action Items Checklist -->
+        <div class="action-items-card">
+          <h4>Recommended Agent Action Items:</h4>
+          <ul id="action-items-list">
+            <!-- Injected via JS -->
+          </ul>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="agent-actions-footer">
+          <button class="btn btn-success" id="btn-approve">
+            <span class="btn-icon">✓</span> Approve & Send to Customer
+          </button>
+          <button class="btn btn-warning" id="btn-escalate">
+            <span class="btn-icon">🚨</span> Dispatch to Field Engineering
+          </button>
+        </div>
+      </section>
+
+      <!-- Column 3: Knowledge Base Citations & KB Explorer -->
+      <section class="panel panel-right">
+        <div class="panel-header">
+          <h2>📚 Knowledge Base & Citations</h2>
+          <span class="kb-count-badge" id="kb-count-badge">8 Articles</span>
+        </div>
+
+        <!-- Citations Section -->
+        <div class="citations-wrapper">
+          <h3 class="section-title">Relied Upon Citations:</h3>
+          <div class="citations-list" id="citations-list">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+
+        <!-- Live Semantic Search -->
+        <div class="kb-search-container">
+          <h3 class="section-title">Vector Search Knowledge Base:</h3>
+          <div class="search-input-box">
+            <input type="text" id="kb-search-input" placeholder="Search KB (e.g. roaming fees, red LOS, ETF)..." />
+            <button id="btn-search-kb" class="btn btn-secondary btn-sm">Search</button>
+          </div>
+        </div>
+
+        <!-- KB Article Catalog -->
+        <div class="articles-catalog" id="articles-catalog">
+          <!-- Injected via JS -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Action completed successfully</div>
+
+    <!-- Article Modal Viewer -->
+    <div id="article-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-group">
+            <span class="modal-art-id" id="modal-art-id">KB-NET-001</span>
+            <h3 id="modal-art-title">Article Title</h3>
+          </div>
+          <button class="btn-close-modal" id="btn-close-modal">✕</button>
+        </div>
+        <div class="modal-body" id="modal-art-body">
+          <!-- Article sections injected here -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
