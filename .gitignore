@@ -14,3 +14,4 @@ dist/
 .env.*
 .DS_Store
 TASK.md
+.v/
