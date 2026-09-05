@@ -183,7 +183,7 @@ class FactValidator:
 
         for router_model in self.KNOWN_ROUTERS:
             if router_model.lower() in text_lower:
-                if router_model.lower() == actual_router.lower() or (actual_router and router_model.split()[0].lower() in actual_router.lower()):
+                if router_model.lower() == actual_router.lower():
                     audit.append(FactCheckItem(
                         field="CPE Router Model",
                         claim=router_model,
